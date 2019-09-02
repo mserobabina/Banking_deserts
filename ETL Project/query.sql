@@ -1,0 +1,121 @@
+DROP TABLE income_employment
+CREATE TABLE income_employment(
+	ID INT NOT NULL,
+	FIPS INT NOT NULL,
+	state VARCHAR(100) NOT NULL,
+	county VARCHAR(100) NOT NULL,
+	unemployed_rate FLOAT,
+	median_income VARCHAR(10),
+	PRIMARY KEY(FIPS,state)
+)
+SELECT * FROM income_employment
+
+DROP TABLE population
+CREATE TABLE population(
+	geo_id VARCHAR(100) NOT NULL, 
+	FIPS INT NOT NULL PRIMARY KEY,
+	county VARCHAR(500) NOT NULL, 
+	white INT NOT NULL, 
+	black INT NOT NULL, 
+	native INT NOT NULL, 
+	asian INT NOT NULL, 
+	pacific_islanders INT NOT NULL, 
+	other INT NOT NULL, 
+	total INT NOT NULL, 
+	not_hispanic INT NOT NULL, 
+	hispanic INT NOT NULL, 
+	male INT NOT NULL,
+    female INT NOT NULL
+)
+SELECT * FROM population
+
+CREATE TABLE internet(
+	geo_id VARCHAR(100) NOT NULL, 
+	FIPS INT NOT NULL PRIMARY KEY,
+	county VARCHAR(500) NOT NULL, 
+	hh_access INT NOT NULL, 
+	hh_access_pct INT NOT NULL, 
+	hh_computer INT NOT NULL, 
+	hh_computer_pct FLOAT NOT NULL, 
+	hh_broadband INT NOT NULL, 
+	hh_broadband_pct FLOAT NOT NULL
+)
+SELECT * FROM internet
+
+CREATE TABLE hhIncome(
+	geo_id VARCHAR(100) NOT NULL, 
+	FIPS INT NOT NULL PRIMARY KEY,
+	county VARCHAR(500) NOT NULL, 
+	hh_less_10k FLOAT NOT NULL, 
+	hh_10_14k FLOAT NOT NULL, 
+	hh_15_24k FLOAT NOT NULL, 
+	hh_25_34k FLOAT NOT NULL, 
+	hh_35_49k FLOAT NOT NULL, 
+	hh_50_74k FLOAT NOT NULL,
+	hh_75_99k FLOAT NOT NULL,
+	hh_100_149k FLOAT NOT NULL,
+	hh_150_199k FLOAT NOT NULL,
+	hh_200k FLOAT NOT NULL,
+	hh_median INT NOT NULL,
+	hh_mean INT NOT NULL
+)
+SELECT * FROM hhIncome
+
+CREATE TABLE education(
+	geo_id VARCHAR(100) NOT NULL, 
+	FIPS INT NOT NULL PRIMARY KEY,
+	county VARCHAR(500) NOT NULL,
+	pop_18_24 INT NOT NULL,
+	ed_18_24_less_HS INT NOT NULL,
+	ed_18_24_HS INT NOT NULL,
+	ed_18_24_some_coll INT NOT NULL,
+	ed_18_24_bach INT NOT NULL,
+	pop_25 INT NOT NULL,
+	ed_25_less_9th INT NOT NULL,
+	ed_25_HS_no_dip INT NOT NULL,
+	ed_25_HS INT NOT NULL,
+	ed_25_some_coll INT NOT NULL,
+	ed_25_associate INT NOT NULL,
+	ed_25_bach INT NOT NULL,
+	ed_25_grad_sch INT NOT NULL,
+	ed_white_HS INT NOT NULL,
+	ed_white_bach INT NOT NULL,
+	ed_black_HS INT NOT NULL,
+	ed_black_bach INT NOT NULL,
+	ed_native_HS INT NOT NULL,
+	ed_native_bach INT NOT NULL,
+	ed_asian_HS INT NOT NULL,
+	ed_asian_bach INT NOT NULL,
+	ed_hispa_HS INT NOT NULL,
+	ed_hispa_bach INT NOT NULL
+)
+SELECT * FROM education
+
+DROP TABLE banks
+CREATE TABLE banks(
+	ID VARCHAR(100),
+	NAME VARCHAR(100),   
+	ADDRESS VARCHAR(300),
+	CITY VARCHAR(100),
+	COUNTY VARCHAR(100), 
+	STATE VARCHAR(100),
+	ZIPCODE INT,
+	BRSERTYP INT,
+	DEPOSIT FLOAT,
+	BKMO INT,
+	DATE_ESTABLISHED VARCHAR(30),
+	LATITUDE VARCHAR(100),
+	LONGITUDE VARCHAR(100),
+	RSSDID INT,
+	ASSETS FLOAT,
+	INSURANCE_L VARCHAR(70),
+	BANK_TYPE VARCHAR(100),
+	TOTAL_LOANS FLOAT,
+	REAL_ESTATE_LOANS INT,
+	CONSTRUCTION_LOANS INT,
+	NONRESIDENTIAL_LOANS INT,
+	AUTO_LOANS INT,
+	RESIDENTIAL_LOANS INT,
+	INDIVIDUAL_LOANS INT
+)
+SELECT * FROM banks 
