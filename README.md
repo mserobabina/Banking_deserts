@@ -1,6 +1,6 @@
 # ETL Project
 
-##Summary
+## Summary
 The main objective of this analysis is to determine where bank deserts are located in the United States and populations affected by the lack of financial services in their area. Exploring who borrows, where they borrow and why. This analysis will be covering demographics and bank metrics for year 2017 (partial analysis of 2019 is presented as well) in 3,142 U.S. counties, excluding Puerto Rico.
 
 ### Data Extraction
@@ -14,7 +14,7 @@ Three data sources were utilized to compile database:
  * Selected the variables of interest for the analysis
  * Eliminated any duplicates or null values
  * Summed quartely values to obtain annual observations for bank metrics
- *Note: For details on data transformation, please refer to the \"Data_Transformation.ipynb\" file*
+   Note: For details on data transformation, please refer to the \"Data_Transformation.ipynb\" file*
  
  ### Data Loading
  Financial Deserts database were created in SQL, containing:
