@@ -14,7 +14,7 @@ Three data sources were utilized to compile database:
  * Selected the variables of interest for the analysis
  * Eliminated any duplicates or null values
  * Summed quartely values to obtain annual observations for bank metrics
-   Note: For details on data transformation, please refer to the \"Data_Transformation.ipynb\" file*
+ * Note: For details on data transformation, please refer to the \"Data_Transformation.ipynb\" file*
  
  ### Data Loading
  Financial Deserts database were created in SQL, containing:
