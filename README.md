@@ -23,6 +23,25 @@ Three data sources were utilized to compile database:
  * Bank metrics
  
  ## Statistical Summary
+ 
+ #Set dependencies
+import pandas as pd
+import numpy as np
+import warnings
+warnings.filterwarnings('ignore')
+#Load the transformed files
+population="Population.csv"
+education="Eductation.csv"
+hh_income="HouseholdIncome.csv"
+income_unemployment="Income_Unemployment_2017.csv"
+internet_access = "InternetAccess.csv"
+
+#Read the files
+df_population = pd.read_csv(population)
+df_education = pd.read_csv(education)
+df_hh_income = pd.read_csv(hh_income)
+df_income_unemployment= pd.read_csv(income_unemployment)
+df_internet_access= pd.read_csv(internet_access)
    "cell_type": "code",
    "execution_count": 6,
    "metadata": {},
