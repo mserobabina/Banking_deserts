@@ -5,16 +5,16 @@ The main objective of this analysis is to determine where bank deserts are locat
 
 ### Data Extraction
 Three data sources were utilized to compile database:
-* **For bank metrics**, quartely data from the FDIC Financial Data was utilized . CSV files can be extracted [here](https://www5.fdic.gov/idasp/advSearch_warp_download_all.asp?intTab=1) \,
-* **For demographics**, data from the 2017 estimates American Community Survey (2010 U.S. Census) was utilized. CSV files can be extracted [here](https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml)\n",
-* **For unemployment and median household income**, data from the Bureau of Labor Statistics - LAUS data was utilized. Excel files can be extracted [here](https://www.bls.gov/lau/)"
+* **For bank metrics**, quartely data from the FDIC Financial Data was utilized . CSV files can be extracted [here](https://www5.fdic.gov/idasp/advSearch_warp_download_all.asp?intTab=1)
+* **For demographics**, data from the 2017 estimates American Community Survey (2010 U.S. Census) was utilized. CSV files can be extracted [here](https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml)
+* **For unemployment and median household income**, data from the Bureau of Labor Statistics - LAUS data was utilized. Excel files can be extracted [here](https://www.bls.gov/lau/)
  
 ### Data Transformation
  For each source:
  * Selected the variables of interest for the analysis
  * Eliminated any duplicates or null values
  * Summed quartely values to obtain annual observations for bank metrics
- * Note: For details on data transformation, please refer to the \"Data_Transformation.ipynb\" file*
+ ** Note: For details on data transformation, please refer to the \"Data_Transformation.ipynb\" **
  
  ### Data Loading
  Financial Deserts database were created in SQL, containing:
