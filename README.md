@@ -10,7 +10,7 @@ Three data sources were utilized to compile database:
 * **For unemployment and median household income**, data from the Bureau of Labor Statistics - LAUS data was utilized. Excel files can be extracted [here](https://www.bls.gov/lau/)
  
 ### Data Transformation 
- For each source:
+ For each source: 
  * Selected the variables of interest for the analysis
  * Eliminated any duplicates or null values
  * Summed quartely values to obtain annual observations for bank metrics
