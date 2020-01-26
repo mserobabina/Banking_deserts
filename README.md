@@ -5,7 +5,7 @@ The main objective of this analysis is to determine where bank deserts are locat
 
 ### Data Extraction
 Three data sources were utilized to compile database:
-* **For bank metrics**, quartely data from the FDIC Financial Data was utilized . CSV files can be extracted [here](https://www5.fdic.gov/idasp/advSearch_warp_download_all.asp?intTab=1)
+* **For bank metrics**, quarterly data from the FDIC Financial Data was utilized . CSV files can be extracted [here](https://www5.fdic.gov/idasp/advSearch_warp_download_all.asp?intTab=1)
 * **For demographics**, data from the 2017 estimates American Community Survey (2010 U.S. Census) was utilized. CSV files can be extracted [here](https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml)
 * **For unemployment and median household income**, data from the Bureau of Labor Statistics - LAUS data was utilized. Excel files can be extracted [here](https://www.bls.gov/lau/)
  
